@@ -28,6 +28,8 @@
     
       <button type="submit" class="btn btn-success"></button>
       <a href="cadastros">Cadastre-se</a>
+      <h4>Página do candidato</h4>
+      <a href="seu_emprego1">Seu emprego</a>
 
     </form>
   </div>
