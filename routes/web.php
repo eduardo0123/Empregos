@@ -28,6 +28,8 @@ Route::get('/login', function () {
 //Route::post('/login', [AuthController::class, 'login']);
 Route::post('/login', [App\Http\Controllers\AuthController::class, 'login'])->name('cadastro_vagas');
 
+
+
 //Route::post('/login', '\App\Http\Controllers\LoginController@login')->name('login');
 
 
@@ -67,4 +69,7 @@ Route::POST('vagas1/', 'App\Http\Controllers\vagaController@store')->name('cadas
 
 //Route::get('seu_emprego1/', 'App\Http\Controllers\recuperar3Controller@create');
 //Route::POST('seu_emprego1/', 'App\Http\Controllers\recuperar3Controller@store')->name('cadastrar_vaga2');
+
+
+
 

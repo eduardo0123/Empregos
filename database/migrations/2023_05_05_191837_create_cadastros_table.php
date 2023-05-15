@@ -17,8 +17,10 @@ return new class extends Migration
             $table->String('nome',45);
             $table->String('endereco',70);
             $table->String('email',45);
-            $table->String('senha',45);
+            $table->String('senha',100);
+            $table->timestamps();
            
+
         });
     }
 
