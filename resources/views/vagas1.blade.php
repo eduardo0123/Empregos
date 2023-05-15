@@ -31,6 +31,8 @@
                                 <label for="firstname">Exigências</label>
                                 <input id="firstname" type="text" name="exigências" placeholder="Digite as exigências para concorrer a vaga" required>
                             </div>
+                            
+
                             <div>
                             <button type="submit" class="btn btn-success">Entrar</button>
                             </div>
@@ -42,12 +44,17 @@
                             </div>
                             <div class="input-group">
                                 <div class="input-box">
-                        <ul>
-                            @foreach ($vagas as $vaga)
-                                <li>{{ $vaga->cargo }} - {{ $vaga->remuneracao }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
+                                    <ul>
+                                        @foreach ($vagas as $vaga)
+                                            <li>
+                                                {{ $vaga->cargo }} - {{ $vaga->remuneracao }} 
+                                               
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                                                     
+                                 
+                                    
                             
 
 </body>

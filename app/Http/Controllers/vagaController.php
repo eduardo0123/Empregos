@@ -16,9 +16,10 @@ class vagaController extends Controller
             'cargo' => $request->cargo,
             'remuneracao' => $request->remuneracao,
             'exigências' => $request->exigências,
-            'responsabilidades' => $request->responsabilidades,
-            
+            'responsabilidades' => $request->responsabilidades, 
+           
         ]);
         return "vaga cadastrada!";
     }
+  
 }

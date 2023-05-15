@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,8 +14,14 @@
 
     <div class="card" id="telaLogin">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
+  @if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
   <div class="card-body">
-    <form action="">
+    <form method="POST" action="{{ route('login')}}">
+      {{ csrf_field() }}
       <h1>login</h1> 
       <div class="input-box">
         <label for="email">E-mail</label>
@@ -22,18 +29,19 @@
         <br /> 
       </div>
       <div class="input-box">
-        <label for="password">Senha</label>
+        <label for="senha">Senha</label>
         <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
         <br /> 
     
-      <button type="submit" class="btn btn-success"></button>
+        <button type="submit">Login</button>
       <a href="cadastros">Cadastre-se</a>
       <h4>Página do candidato</h4>
       <a href="seu_emprego1">Seu emprego</a>
 
     </form>
   </div>
+  
 </div>
-       
+
 </body>
 </html>

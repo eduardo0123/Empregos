@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class vaga extends Model
 {
     use HasFactory;
+    protected $table = 'vagas'; 
     protected $fillable = ['cargo','remuneracao','responsabilidades','exigências'];
+
+    
+   
 }

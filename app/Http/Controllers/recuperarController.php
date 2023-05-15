@@ -12,4 +12,5 @@ class RecuperarController extends Controller
         $vagas = vaga::all();
         return view('vagas1', ['vagas' => $vagas]);
     }
+    
 }

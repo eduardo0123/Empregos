@@ -74,12 +74,12 @@
 </div>
 <div class="input-group">
   <div class="input-box">
-<ul>
-  @foreach ($cadastros as $cadastro)
-      <li>{{ $cadastro->nome }} - {{ $cadastro->senha }}</li>
-  @endforeach
-</ul>
+      @if (session('error'))
+          <div class="alert alert-danger">{{ session('error') }}</div>
+      @endif
+  </div>
 </div>
+
   
 </body>
 </html>

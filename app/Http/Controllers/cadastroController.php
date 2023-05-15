@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\cadastro;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
 
 
 class cadastroController extends Controller
@@ -18,8 +20,9 @@ class cadastroController extends Controller
         'nome' => $request->nome,
         'endereco' => $request->endereco,
         'email' => $request->email,
-        'senha' => $request->senha,
+        'senha' => Hash::make($request->senha),
 
+        
         ]);
 return "cadastrado com sucesso!";
         }
